@@ -1,0 +1,40 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3"
+    >
+
+    <Button android:id="@+id/closet_main"
+        android:layout_width="fill_parent"
+        android:layout_height="180dp"
+        android:text="@string/closet"
+        android:background="@drawable/closet_bg"
+        android:textColor="@color/buttonText"
+        android:onClick="showCloset"
+        android:drawableTop="@drawable/ic_closet_white"
+        android:layout_weight="1"
+        />
+
+    <Button android:id="@+id/outfits_main"
+        android:layout_width="fill_parent"
+        android:layout_height="180dp"
+        android:text="@string/outfits"
+        android:drawableTop="@drawable/ic_outfits_white"
+        android:background="@drawable/outfits_bg"
+        android:textColor="@color/buttonText"
+        android:onClick="showOutfits"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/capsules_main"
+        android:layout_width="fill_parent"
+        android:layout_height="180dp"
+        android:text="@string/capsules"
+        android:background="@drawable/capsules_bg"
+        android:drawableTop="@drawable/ic_suitcase_white"
+        android:textColor="@color/buttonText"
+        android:layout_weight="1"/>
+
+</LinearLayout>

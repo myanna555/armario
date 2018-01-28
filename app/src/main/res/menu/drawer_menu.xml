@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item android:id="@+id/action_home_drawer"
+        android:title="@string/action_home"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_home"/>
+
+
+    <item android:id="@+id/action_closet_drawer"
+        android:title="@string/closet"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_closet"/>
+
+
+    <item android:id="@+id/action_outfits_drawer"
+        android:title="@string/outfits"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_outfits"/>
+
+    <item android:id="@+id/action_capsules_drawer"
+        android:title="@string/capsules"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_suitcase"/>
+
+</menu>

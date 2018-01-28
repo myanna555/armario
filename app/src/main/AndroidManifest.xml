@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.gatofalante.armario">
+
+    <application
+        android:name=".utilities.ArmarioApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Gato&apos;s Armario"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+        <activity android:name=".activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.TaskListActivity"
+            android:label="@string/title_activity_task_list"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity
+            android:name=".activities.CategoryListActivity"
+            android:label="@string/title_category_list"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity
+            android:name=".activities.CategoryDetailActivity"
+            android:label="@string/title_category_detail"
+            android:parentActivityName=".activities.CategoryListActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.gatofalante.armario.activities.CategoryListActivity" />
+        </activity>
+        <activity
+            android:name=".activities.CategoryActivity"
+            android:label="@string/title_activity_category"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity android:name=".activities.CategoryContentsActivity" />
+        <activity android:name=".activities.BaseActivity" />
+        <activity
+            android:name=".activities.MixAndMatchActivity"
+            android:label="@string/title_activity_mix_and_match"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity
+            android:name=".activities.NavigationActivity"
+            android:label="@string/title_activity_navigation"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity android:name=".activities.TestActivity" />
+        <activity android:name=".activities.DetailActivity" />
+        <activity android:name=".activities.OutfitsActivity" />
+        <activity android:name=".activities.SelectionActivity" />
+        <activity android:name=".activities.DataInsertActivity"></activity>
+    </application>
+
+</manifest>
